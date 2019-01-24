@@ -29,6 +29,7 @@ public class Element {
         return position;
     }
 
+
     public ElementType getElementType() {
         return elementType;
     }
