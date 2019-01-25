@@ -60,7 +60,7 @@ public class Board {
 
     }
 
-    public static void redrawMap() {
+    public static void redrawBoard() {
 
         Position.screenInitializer();
 
@@ -138,7 +138,7 @@ public class Board {
         Pacman pacman = new Pacman();
         pacman.setScore(0);
         pacman.setCollectedCoins(0);
-        Board.redrawMap();
+        Board.redrawBoard();
         Board.startTimeline();
 
     }

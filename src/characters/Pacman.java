@@ -50,7 +50,7 @@ public class Pacman {//extends Character{
                     ElementArray.getElement(position.getRow(), position.getColumn()).setElementType(Element.ElementType.EMPTY);
                 }
                 Pacman.node.setRotate(90);
-                Board.redrawMap();
+                Board.redrawBoard();
                 if (Pacman.getCollectedCoins() == Constants.COIN_NUMBER) {
                     Board.winGame();
                 }
@@ -70,7 +70,7 @@ public class Pacman {//extends Character{
                 }
 
                 Pacman.node.setRotate(270);
-                Board.redrawMap();
+                Board.redrawBoard();
                 if (Pacman.getCollectedCoins() == Constants.COIN_NUMBER) {
                     Board.winGame();
                 }
@@ -89,7 +89,7 @@ public class Pacman {//extends Character{
                     ElementArray.getElement(position.getRow(), position.getColumn()).setElementType(Element.ElementType.EMPTY);
                 }
                 Pacman.node.setRotate(180);
-                Board.redrawMap();
+                Board.redrawBoard();
                 if (Pacman.getCollectedCoins() == Constants.COIN_NUMBER) {
                     Board.winGame();
                 }
@@ -108,7 +108,7 @@ public class Pacman {//extends Character{
                     ElementArray.getElement(position.getRow(), position.getColumn()).setElementType(Element.ElementType.EMPTY);
                 }
                 Pacman.node.setRotate(270 + 90);
-                Board.redrawMap();
+                Board.redrawBoard();
                 if (Pacman.getCollectedCoins() == Constants.COIN_NUMBER) {
                     Board.winGame();
                 }

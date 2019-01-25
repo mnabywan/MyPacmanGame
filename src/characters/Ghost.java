@@ -98,7 +98,7 @@ public class Ghost extends Thread {
             this.setPosition(newGhostPosition);
             Pacman.setPosition(newPacmanPosition);
         } else {
-            Board.redrawMap();
+            Board.redrawBoard();
         }
     }
 
@@ -108,7 +108,7 @@ public class Ghost extends Thread {
             return false;
         }
         this.position = new Position(position.getRow() - 1, position.getColumn());
-        Board.redrawMap();
+        Board.redrawBoard();
         return true;
     }
 
@@ -117,7 +117,7 @@ public class Ghost extends Thread {
             return false;
         }
         this.position = new Position(position.getRow() + 1, position.getColumn());
-        Board.redrawMap();
+        Board.redrawBoard();
         return true;
     }
 
@@ -127,7 +127,7 @@ public class Ghost extends Thread {
             return false;
         }
         this.position = new Position(position.getRow(), position.getColumn() - 1);
-        Board.redrawMap();
+        Board.redrawBoard();
         return true;
     }
 
@@ -137,7 +137,7 @@ public class Ghost extends Thread {
             return false;
         }
         this.position = new Position(position.getRow(), position.getColumn() + 1);
-        Board.redrawMap();
+        Board.redrawBoard();
         return true;
     }
 

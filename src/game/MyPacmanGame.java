@@ -46,7 +46,7 @@ public class MyPacmanGame extends Application {
             }
         }
 
-        Board.redrawMap();
+        Board.redrawBoard();
         Board.startTimeline();
 
     }
